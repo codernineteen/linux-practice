@@ -1,0 +1,371 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUSY_WORKER_HASH_ORDER	workqueue.c	/^	BUSY_WORKER_HASH_ORDER	= 6,		\/* 64 pointers *\/$/;"	e	enum:__anon1	file:
+CREATE_COOLDOWN	workqueue.c	/^	CREATE_COOLDOWN		= HZ,		\/* time to breath after fail *\/$/;"	e	enum:__anon1	file:
+CREATE_TRACE_POINTS	workqueue.c	360;"	d	file:
+HIGHPRI_NICE_LEVEL	workqueue.c	/^	HIGHPRI_NICE_LEVEL	= MIN_NICE,$/;"	e	enum:__anon1	file:
+IDLE_WORKER_TIMEOUT	workqueue.c	/^	IDLE_WORKER_TIMEOUT	= 300 * HZ,	\/* keep idle ones for 5 mins *\/$/;"	e	enum:__anon1	file:
+MAX_IDLE_WORKERS_RATIO	workqueue.c	/^	MAX_IDLE_WORKERS_RATIO	= 4,		\/* 1\/4 of busy can be idle *\/$/;"	e	enum:__anon1	file:
+MAYDAY_INITIAL_TIMEOUT	workqueue.c	/^	MAYDAY_INITIAL_TIMEOUT  = HZ \/ 100 >= 2 ? HZ \/ 100 : 2,$/;"	e	enum:__anon1	file:
+MAYDAY_INTERVAL	workqueue.c	/^	MAYDAY_INTERVAL		= HZ \/ 10,	\/* and then every 100ms *\/$/;"	e	enum:__anon1	file:
+NR_STD_WORKER_POOLS	workqueue.c	/^	NR_STD_WORKER_POOLS	= 2,		\/* # standard pools per cpu *\/$/;"	e	enum:__anon1	file:
+POOL_DISASSOCIATED	workqueue.c	/^	POOL_DISASSOCIATED	= 1 << 2,	\/* cpu can't serve workers *\/$/;"	e	enum:__anon1	file:
+POOL_MANAGER_ACTIVE	workqueue.c	/^	POOL_MANAGER_ACTIVE	= 1 << 0,	\/* being managed *\/$/;"	e	enum:__anon1	file:
+RESCUER_NICE_LEVEL	workqueue.c	/^	RESCUER_NICE_LEVEL	= MIN_NICE,$/;"	e	enum:__anon1	file:
+UNBOUND_POOL_HASH_ORDER	workqueue.c	/^	UNBOUND_POOL_HASH_ORDER	= 6,		\/* hashed by pool->attrs *\/$/;"	e	enum:__anon1	file:
+WORKER_CPU_INTENSIVE	workqueue.c	/^	WORKER_CPU_INTENSIVE	= 1 << 6,	\/* cpu intensive *\/$/;"	e	enum:__anon1	file:
+WORKER_DIE	workqueue.c	/^	WORKER_DIE		= 1 << 1,	\/* die die die *\/$/;"	e	enum:__anon1	file:
+WORKER_IDLE	workqueue.c	/^	WORKER_IDLE		= 1 << 2,	\/* is idle *\/$/;"	e	enum:__anon1	file:
+WORKER_NOT_RUNNING	workqueue.c	/^	WORKER_NOT_RUNNING	= WORKER_PREP | WORKER_CPU_INTENSIVE |$/;"	e	enum:__anon1	file:
+WORKER_PREP	workqueue.c	/^	WORKER_PREP		= 1 << 3,	\/* preparing to run works *\/$/;"	e	enum:__anon1	file:
+WORKER_REBOUND	workqueue.c	/^	WORKER_REBOUND		= 1 << 8,	\/* worker was rebound *\/$/;"	e	enum:__anon1	file:
+WORKER_UNBOUND	workqueue.c	/^	WORKER_UNBOUND		= 1 << 7,	\/* worker is unbound *\/$/;"	e	enum:__anon1	file:
+WQ_NAME_LEN	workqueue.c	/^	WQ_NAME_LEN		= 24,$/;"	e	enum:__anon1	file:
+____cacheline_aligned	workqueue.c	/^	unsigned int		flags ____cacheline_aligned; \/* WQ: WQ_* flags *\/$/;"	m	struct:workqueue_struct	file:
+____cacheline_aligned_in_smp	workqueue.c	/^	atomic_t		nr_running ____cacheline_aligned_in_smp;$/;"	m	struct:worker_pool	file:
+____cacheline_aligned_in_smp	workqueue.c	/^} ____cacheline_aligned_in_smp;$/;"	v	typeref:struct:worker_pool
+__cancel_work	workqueue.c	/^static bool __cancel_work(struct work_struct *work, bool is_dwork)$/;"	f	file:
+__cancel_work_timer	workqueue.c	/^static bool __cancel_work_timer(struct work_struct *work, bool is_dwork)$/;"	f	file:
+__flush_work	workqueue.c	/^static bool __flush_work(struct work_struct *work, bool from_cancel)$/;"	f	file:
+__init_work	workqueue.c	/^EXPORT_SYMBOL_GPL(__init_work);$/;"	v
+__init_work	workqueue.c	/^void __init_work(struct work_struct *work, int onstack)$/;"	f
+__need_more_worker	workqueue.c	/^static bool __need_more_worker(struct worker_pool *pool)$/;"	f	file:
+__queue_delayed_work	workqueue.c	/^static void __queue_delayed_work(int cpu, struct workqueue_struct *wq,$/;"	f	file:
+__queue_work	workqueue.c	/^static void __queue_work(int cpu, struct workqueue_struct *wq,$/;"	f	file:
+__read_mostly	workqueue.c	/^struct workqueue_struct *system_freezable_power_efficient_wq __read_mostly;$/;"	v	typeref:struct:system_freezable_power_efficient_wq
+__read_mostly	workqueue.c	/^struct workqueue_struct *system_freezable_wq __read_mostly;$/;"	v	typeref:struct:system_freezable_wq
+__read_mostly	workqueue.c	/^struct workqueue_struct *system_highpri_wq __read_mostly;$/;"	v	typeref:struct:system_highpri_wq
+__read_mostly	workqueue.c	/^struct workqueue_struct *system_long_wq __read_mostly;$/;"	v	typeref:struct:system_long_wq
+__read_mostly	workqueue.c	/^struct workqueue_struct *system_power_efficient_wq __read_mostly;$/;"	v	typeref:struct:system_power_efficient_wq
+__read_mostly	workqueue.c	/^struct workqueue_struct *system_unbound_wq __read_mostly;$/;"	v	typeref:struct:system_unbound_wq
+__read_mostly	workqueue.c	/^struct workqueue_struct *system_wq __read_mostly;$/;"	v	typeref:struct:system_wq
+alloc_and_link_pwqs	workqueue.c	/^static int alloc_and_link_pwqs(struct workqueue_struct *wq)$/;"	f	file:
+alloc_unbound_pwq	workqueue.c	/^static struct pool_workqueue *alloc_unbound_pwq(struct workqueue_struct *wq,$/;"	f	file:
+alloc_worker	workqueue.c	/^static struct worker *alloc_worker(int node)$/;"	f	file:
+alloc_workqueue	workqueue.c	/^EXPORT_SYMBOL_GPL(alloc_workqueue);$/;"	v
+alloc_workqueue	workqueue.c	/^struct workqueue_struct *alloc_workqueue(const char *fmt,$/;"	f
+alloc_workqueue_attrs	workqueue.c	/^struct workqueue_attrs *alloc_workqueue_attrs(void)$/;"	f
+apply_workqueue_attrs	workqueue.c	/^int apply_workqueue_attrs(struct workqueue_struct *wq,$/;"	f
+apply_workqueue_attrs_locked	workqueue.c	/^static int apply_workqueue_attrs_locked(struct workqueue_struct *wq,$/;"	f	file:
+apply_wqattrs_cleanup	workqueue.c	/^static void apply_wqattrs_cleanup(struct apply_wqattrs_ctx *ctx)$/;"	f	file:
+apply_wqattrs_commit	workqueue.c	/^static void apply_wqattrs_commit(struct apply_wqattrs_ctx *ctx)$/;"	f	file:
+apply_wqattrs_ctx	workqueue.c	/^struct apply_wqattrs_ctx {$/;"	s	file:
+apply_wqattrs_lock	workqueue.c	/^static void apply_wqattrs_lock(void)$/;"	f	file:
+apply_wqattrs_prepare	workqueue.c	/^apply_wqattrs_prepare(struct workqueue_struct *wq,$/;"	f	file:
+apply_wqattrs_unlock	workqueue.c	/^static void apply_wqattrs_unlock(void)$/;"	f	file:
+arg	workqueue.c	/^	void *arg;$/;"	m	struct:work_for_cpu	file:
+assert_rcu_or_pool_mutex	workqueue.c	363;"	d	file:
+assert_rcu_or_wq_mutex	workqueue.c	368;"	d	file:
+assert_rcu_or_wq_mutex_or_pool_mutex	workqueue.c	373;"	d	file:
+attrs	workqueue.c	/^	struct workqueue_attrs	*attrs;		\/* I: worker attributes *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::workqueue_attrs	file:
+attrs	workqueue.c	/^	struct workqueue_attrs	*attrs;		\/* attrs to apply *\/$/;"	m	struct:apply_wqattrs_ctx	typeref:struct:apply_wqattrs_ctx::workqueue_attrs	file:
+cancel_delayed_work	workqueue.c	/^EXPORT_SYMBOL(cancel_delayed_work);$/;"	v
+cancel_delayed_work	workqueue.c	/^bool cancel_delayed_work(struct delayed_work *dwork)$/;"	f
+cancel_delayed_work_sync	workqueue.c	/^EXPORT_SYMBOL(cancel_delayed_work_sync);$/;"	v
+cancel_delayed_work_sync	workqueue.c	/^bool cancel_delayed_work_sync(struct delayed_work *dwork)$/;"	f
+cancel_work_sync	workqueue.c	/^EXPORT_SYMBOL_GPL(cancel_work_sync);$/;"	v
+cancel_work_sync	workqueue.c	/^bool cancel_work_sync(struct work_struct *work)$/;"	f
+check_flush_dependency	workqueue.c	/^static void check_flush_dependency(struct workqueue_struct *target_wq,$/;"	f	file:
+clear_work_data	workqueue.c	/^static void clear_work_data(struct work_struct *work)$/;"	f	file:
+copy_workqueue_attrs	workqueue.c	/^static void copy_workqueue_attrs(struct workqueue_attrs *to,$/;"	f	file:
+cpu	workqueue.c	/^	int			cpu;		\/* I: the associated cpu *\/$/;"	m	struct:worker_pool	file:
+cpu_pwqs	workqueue.c	/^	struct pool_workqueue __percpu *cpu_pwqs; \/* I: per-cpu pwqs *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::__percpu	file:
+create_worker	workqueue.c	/^static struct worker *create_worker(struct worker_pool *pool)$/;"	f	file:
+current_is_workqueue_rescuer	workqueue.c	/^bool current_is_workqueue_rescuer(void)$/;"	f
+current_work	workqueue.c	/^EXPORT_SYMBOL(current_work);$/;"	v
+current_work	workqueue.c	/^struct work_struct *current_work(void)$/;"	f
+cwt_wait	workqueue.c	/^struct cwt_wait {$/;"	s	file:
+cwt_wakefn	workqueue.c	/^static int cwt_wakefn(wait_queue_entry_t *wait, unsigned mode, int sync, void *key)$/;"	f	file:
+debug_work_activate	workqueue.c	/^static inline void debug_work_activate(struct work_struct *work) { }$/;"	f	file:
+debug_work_activate	workqueue.c	/^static inline void debug_work_activate(struct work_struct *work)$/;"	f	file:
+debug_work_deactivate	workqueue.c	/^static inline void debug_work_deactivate(struct work_struct *work) { }$/;"	f	file:
+debug_work_deactivate	workqueue.c	/^static inline void debug_work_deactivate(struct work_struct *work)$/;"	f	file:
+delayed_work_timer_fn	workqueue.c	/^EXPORT_SYMBOL(delayed_work_timer_fn);$/;"	v
+delayed_work_timer_fn	workqueue.c	/^void delayed_work_timer_fn(struct timer_list *t)$/;"	f
+delayed_works	workqueue.c	/^	struct list_head	delayed_works;	\/* L: delayed works *\/$/;"	m	struct:pool_workqueue	typeref:struct:pool_workqueue::list_head	file:
+destroy_delayed_work_on_stack	workqueue.c	/^EXPORT_SYMBOL_GPL(destroy_delayed_work_on_stack);$/;"	v
+destroy_delayed_work_on_stack	workqueue.c	/^void destroy_delayed_work_on_stack(struct delayed_work *work)$/;"	f
+destroy_work_on_stack	workqueue.c	/^EXPORT_SYMBOL_GPL(destroy_work_on_stack);$/;"	v
+destroy_work_on_stack	workqueue.c	/^void destroy_work_on_stack(struct work_struct *work)$/;"	f
+destroy_worker	workqueue.c	/^static void destroy_worker(struct worker *worker)$/;"	f	file:
+destroy_workqueue	workqueue.c	/^EXPORT_SYMBOL_GPL(destroy_workqueue);$/;"	v
+destroy_workqueue	workqueue.c	/^void destroy_workqueue(struct workqueue_struct *wq)$/;"	f
+detach_completion	workqueue.c	/^	struct completion	*detach_completion; \/* all workers detached *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::completion	file:
+dev	workqueue.c	/^	struct device			dev;$/;"	m	struct:wq_device	typeref:struct:wq_device::device	file:
+dev_to_wq	workqueue.c	/^static struct workqueue_struct *dev_to_wq(struct device *dev)$/;"	f	file:
+dfl_pwq	workqueue.c	/^	struct pool_workqueue	*dfl_pwq;	\/* PW: only for unbound wqs *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::pool_workqueue	file:
+dfl_pwq	workqueue.c	/^	struct pool_workqueue	*dfl_pwq;$/;"	m	struct:apply_wqattrs_ctx	typeref:struct:apply_wqattrs_ctx::pool_workqueue	file:
+done	workqueue.c	/^	struct completion	done;		\/* flush completion *\/$/;"	m	struct:wq_flusher	typeref:struct:wq_flusher::completion	file:
+done	workqueue.c	/^	struct completion	done;$/;"	m	struct:wq_barrier	typeref:struct:wq_barrier::completion	file:
+drain_workqueue	workqueue.c	/^EXPORT_SYMBOL_GPL(drain_workqueue);$/;"	v
+drain_workqueue	workqueue.c	/^void drain_workqueue(struct workqueue_struct *wq)$/;"	f
+execute_in_process_context	workqueue.c	/^EXPORT_SYMBOL_GPL(execute_in_process_context);$/;"	v
+execute_in_process_context	workqueue.c	/^int execute_in_process_context(work_func_t fn, struct execute_work *ew)$/;"	f
+find_worker_executing_work	workqueue.c	/^static struct worker *find_worker_executing_work(struct worker_pool *pool,$/;"	f	file:
+first_flusher	workqueue.c	/^	struct wq_flusher	*first_flusher;	\/* WQ: first flusher *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::wq_flusher	file:
+first_idle_worker	workqueue.c	/^static struct worker *first_idle_worker(struct worker_pool *pool)$/;"	f	file:
+flags	workqueue.c	/^	unsigned int		flags;		\/* X: flags *\/$/;"	m	struct:worker_pool	file:
+flush_color	workqueue.c	/^	int			flush_color;	\/* L: flushing color *\/$/;"	m	struct:pool_workqueue	file:
+flush_color	workqueue.c	/^	int			flush_color;	\/* WQ: current flush color *\/$/;"	m	struct:workqueue_struct	file:
+flush_color	workqueue.c	/^	int			flush_color;	\/* WQ: flush color waiting for *\/$/;"	m	struct:wq_flusher	file:
+flush_delayed_work	workqueue.c	/^EXPORT_SYMBOL(flush_delayed_work);$/;"	v
+flush_delayed_work	workqueue.c	/^bool flush_delayed_work(struct delayed_work *dwork)$/;"	f
+flush_rcu_work	workqueue.c	/^EXPORT_SYMBOL(flush_rcu_work);$/;"	v
+flush_rcu_work	workqueue.c	/^bool flush_rcu_work(struct rcu_work *rwork)$/;"	f
+flush_work	workqueue.c	/^EXPORT_SYMBOL_GPL(flush_work);$/;"	v
+flush_work	workqueue.c	/^bool flush_work(struct work_struct *work)$/;"	f
+flush_workqueue	workqueue.c	/^EXPORT_SYMBOL(flush_workqueue);$/;"	v
+flush_workqueue	workqueue.c	/^void flush_workqueue(struct workqueue_struct *wq)$/;"	f
+flush_workqueue_prep_pwqs	workqueue.c	/^static bool flush_workqueue_prep_pwqs(struct workqueue_struct *wq,$/;"	f	file:
+flusher_overflow	workqueue.c	/^	struct list_head	flusher_overflow; \/* WQ: flush overflow list *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::list_head	file:
+flusher_queue	workqueue.c	/^	struct list_head	flusher_queue;	\/* WQ: flush waiters *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::list_head	file:
+fn	workqueue.c	/^	long (*fn)(void *);$/;"	m	struct:work_for_cpu	file:
+for_each_cpu_worker_pool	workqueue.c	379;"	d	file:
+for_each_pool	workqueue.c	396;"	d	file:
+for_each_pool_worker	workqueue.c	411;"	d	file:
+for_each_pwq	workqueue.c	428;"	d	file:
+free_workqueue_attrs	workqueue.c	/^void free_workqueue_attrs(struct workqueue_attrs *attrs)$/;"	f
+freeze_workqueues_begin	workqueue.c	/^void freeze_workqueues_begin(void)$/;"	f
+freeze_workqueues_busy	workqueue.c	/^bool freeze_workqueues_busy(void)$/;"	f
+get_pwq	workqueue.c	/^static void get_pwq(struct pool_workqueue *pwq)$/;"	f	file:
+get_unbound_pool	workqueue.c	/^static struct worker_pool *get_unbound_pool(const struct workqueue_attrs *attrs)$/;"	f	file:
+get_work_color	workqueue.c	/^static int get_work_color(struct work_struct *work)$/;"	f	file:
+get_work_pool	workqueue.c	/^static struct worker_pool *get_work_pool(struct work_struct *work)$/;"	f	file:
+get_work_pool_id	workqueue.c	/^static int get_work_pool_id(struct work_struct *work)$/;"	f	file:
+get_work_pwq	workqueue.c	/^static struct pool_workqueue *get_work_pwq(struct work_struct *work)$/;"	f	file:
+hash_node	workqueue.c	/^	struct hlist_node	hash_node;	\/* PL: unbound_pool_hash node *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::hlist_node	file:
+id	workqueue.c	/^	int			id;		\/* I: pool ID *\/$/;"	m	struct:worker_pool	file:
+idle_list	workqueue.c	/^	struct list_head	idle_list;	\/* X: list of idle workers *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::list_head	file:
+idle_timer	workqueue.c	/^	struct timer_list	idle_timer;	\/* L: worker idle timeout *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::timer_list	file:
+idle_worker_timeout	workqueue.c	/^static void idle_worker_timeout(struct timer_list *t)$/;"	f	file:
+init_pwq	workqueue.c	/^static void init_pwq(struct pool_workqueue *pwq, struct workqueue_struct *wq,$/;"	f	file:
+init_rescuer	workqueue.c	/^static int init_rescuer(struct workqueue_struct *wq)$/;"	f	file:
+init_worker_pool	workqueue.c	/^static int init_worker_pool(struct worker_pool *pool)$/;"	f	file:
+insert_work	workqueue.c	/^static void insert_work(struct pool_workqueue *pwq, struct work_struct *work,$/;"	f	file:
+insert_wq_barrier	workqueue.c	/^static void insert_wq_barrier(struct pool_workqueue *pwq,$/;"	f	file:
+is_chained_work	workqueue.c	/^static bool is_chained_work(struct workqueue_struct *wq)$/;"	f	file:
+keep_working	workqueue.c	/^static bool keep_working(struct worker_pool *pool)$/;"	f	file:
+key	workqueue.c	/^	struct lock_class_key	key;$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::lock_class_key	file:
+link_pwq	workqueue.c	/^static void link_pwq(struct pool_workqueue *pwq)$/;"	f	file:
+list	workqueue.c	/^	struct list_head	list;		\/* PR: list of all workqueues *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::list_head	file:
+list	workqueue.c	/^	struct list_head	list;		\/* WQ: list of flushers *\/$/;"	m	struct:wq_flusher	typeref:struct:wq_flusher::list_head	file:
+list	workqueue.c	/^	struct list_head	list;		\/* queued for batching commit *\/$/;"	m	struct:apply_wqattrs_ctx	typeref:struct:apply_wqattrs_ctx::list_head	file:
+lock	workqueue.c	/^	spinlock_t		lock;		\/* the pool lock *\/$/;"	m	struct:worker_pool	file:
+lock_name	workqueue.c	/^	char			*lock_name;$/;"	m	struct:workqueue_struct	file:
+lockdep_map	workqueue.c	/^	struct lockdep_map	lockdep_map;$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::lockdep_map	file:
+manage_workers	workqueue.c	/^static bool manage_workers(struct worker *worker)$/;"	f	file:
+manager	workqueue.c	/^	struct worker		*manager;	\/* L: purely informational *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::worker	file:
+mark_work_canceling	workqueue.c	/^static void mark_work_canceling(struct work_struct *work)$/;"	f	file:
+max_active	workqueue.c	/^	int			max_active;	\/* L: max active works *\/$/;"	m	struct:pool_workqueue	file:
+max_active_show	workqueue.c	/^static ssize_t max_active_show(struct device *dev,$/;"	f	file:
+max_active_store	workqueue.c	/^static ssize_t max_active_store(struct device *dev,$/;"	f	file:
+may_start_working	workqueue.c	/^static bool may_start_working(struct worker_pool *pool)$/;"	f	file:
+mayday_node	workqueue.c	/^	struct list_head	mayday_node;	\/* MD: node on wq->maydays *\/$/;"	m	struct:pool_workqueue	typeref:struct:pool_workqueue::list_head	file:
+mayday_timer	workqueue.c	/^	struct timer_list	mayday_timer;	\/* L: SOS timer for workers *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::timer_list	file:
+maydays	workqueue.c	/^	struct list_head	maydays;	\/* MD: pwqs requesting rescue *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::list_head	file:
+mod_delayed_work_on	workqueue.c	/^EXPORT_SYMBOL_GPL(mod_delayed_work_on);$/;"	v
+mod_delayed_work_on	workqueue.c	/^bool mod_delayed_work_on(int cpu, struct workqueue_struct *wq,$/;"	f
+move_linked_works	workqueue.c	/^static void move_linked_works(struct work_struct *work, struct list_head *head,$/;"	f	file:
+mutex	workqueue.c	/^	struct mutex		mutex;		\/* protects this wq *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::mutex	file:
+name	workqueue.c	/^	char			name[WQ_NAME_LEN]; \/* I: workqueue name *\/$/;"	m	struct:workqueue_struct	file:
+need_more_worker	workqueue.c	/^static bool need_more_worker(struct worker_pool *pool)$/;"	f	file:
+need_to_create_worker	workqueue.c	/^static bool need_to_create_worker(struct worker_pool *pool)$/;"	f	file:
+node	workqueue.c	/^	int			node;		\/* I: the associated node ID *\/$/;"	m	struct:worker_pool	file:
+nr_active	workqueue.c	/^	int			nr_active;	\/* L: nr of active works *\/$/;"	m	struct:pool_workqueue	file:
+nr_drainers	workqueue.c	/^	int			nr_drainers;	\/* WQ: drain in progress *\/$/;"	m	struct:workqueue_struct	file:
+nr_idle	workqueue.c	/^	int			nr_idle;	\/* L: currently idle workers *\/$/;"	m	struct:worker_pool	file:
+nr_in_flight	workqueue.c	/^	int			nr_in_flight[WORK_NR_COLORS];$/;"	m	struct:pool_workqueue	file:
+nr_pwqs_to_flush	workqueue.c	/^	atomic_t		nr_pwqs_to_flush; \/* flush in progress *\/$/;"	m	struct:workqueue_struct	file:
+nr_workers	workqueue.c	/^	int			nr_workers;	\/* L: total number of workers *\/$/;"	m	struct:worker_pool	file:
+numa_pwq_tbl	workqueue.c	/^	struct pool_workqueue __rcu *numa_pwq_tbl[]; \/* PWR: unbound pwqs indexed by node *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::__rcu	file:
+numa_pwq_tbl_install	workqueue.c	/^static struct pool_workqueue *numa_pwq_tbl_install(struct workqueue_struct *wq,$/;"	f	file:
+ordered_wq_attrs	workqueue.c	/^static struct workqueue_attrs *ordered_wq_attrs[NR_STD_WORKER_POOLS];$/;"	v	typeref:struct:workqueue_attrs	file:
+per_cpu_show	workqueue.c	/^static ssize_t per_cpu_show(struct device *dev, struct device_attribute *attr,$/;"	f	file:
+pool	workqueue.c	/^	struct worker_pool	*pool;		\/* I: the associated pool *\/$/;"	m	struct:pool_workqueue	typeref:struct:pool_workqueue::worker_pool	file:
+pool_mayday_timeout	workqueue.c	/^static void pool_mayday_timeout(struct timer_list *t)$/;"	f	file:
+pool_workqueue	workqueue.c	/^struct pool_workqueue {$/;"	s	file:
+pr_cont_pool_info	workqueue.c	/^static void pr_cont_pool_info(struct worker_pool *pool)$/;"	f	file:
+pr_cont_work	workqueue.c	/^static void pr_cont_work(bool comma, struct work_struct *work)$/;"	f	file:
+print_worker_info	workqueue.c	/^void print_worker_info(const char *log_lvl, struct task_struct *task)$/;"	f
+process_scheduled_works	workqueue.c	/^static void process_scheduled_works(struct worker *worker)$/;"	f	file:
+put_pwq	workqueue.c	/^static void put_pwq(struct pool_workqueue *pwq)$/;"	f	file:
+put_pwq_unlocked	workqueue.c	/^static void put_pwq_unlocked(struct pool_workqueue *pwq)$/;"	f	file:
+put_unbound_pool	workqueue.c	/^static void put_unbound_pool(struct worker_pool *pool)$/;"	f	file:
+pwq_activate_delayed_work	workqueue.c	/^static void pwq_activate_delayed_work(struct work_struct *work)$/;"	f	file:
+pwq_activate_first_delayed	workqueue.c	/^static void pwq_activate_first_delayed(struct pool_workqueue *pwq)$/;"	f	file:
+pwq_adjust_max_active	workqueue.c	/^static void pwq_adjust_max_active(struct pool_workqueue *pwq)$/;"	f	file:
+pwq_cache	workqueue.c	/^static struct kmem_cache *pwq_cache;$/;"	v	typeref:struct:kmem_cache	file:
+pwq_dec_nr_in_flight	workqueue.c	/^static void pwq_dec_nr_in_flight(struct pool_workqueue *pwq, int color)$/;"	f	file:
+pwq_tbl	workqueue.c	/^	struct pool_workqueue	*pwq_tbl[];$/;"	m	struct:apply_wqattrs_ctx	typeref:struct:apply_wqattrs_ctx::pool_workqueue	file:
+pwq_unbound_release_workfn	workqueue.c	/^static void pwq_unbound_release_workfn(struct work_struct *work)$/;"	f	file:
+pwqs	workqueue.c	/^	struct list_head	pwqs;		\/* WR: all pwqs of this wq *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::list_head	file:
+pwqs_node	workqueue.c	/^	struct list_head	pwqs_node;	\/* WR: node on wq->pwqs *\/$/;"	m	struct:pool_workqueue	typeref:struct:pool_workqueue::list_head	file:
+queue_delayed_work_on	workqueue.c	/^EXPORT_SYMBOL(queue_delayed_work_on);$/;"	v
+queue_delayed_work_on	workqueue.c	/^bool queue_delayed_work_on(int cpu, struct workqueue_struct *wq,$/;"	f
+queue_rcu_work	workqueue.c	/^EXPORT_SYMBOL(queue_rcu_work);$/;"	v
+queue_rcu_work	workqueue.c	/^bool queue_rcu_work(struct workqueue_struct *wq, struct rcu_work *rwork)$/;"	f
+queue_work_node	workqueue.c	/^EXPORT_SYMBOL_GPL(queue_work_node);$/;"	v
+queue_work_node	workqueue.c	/^bool queue_work_node(int node, struct workqueue_struct *wq,$/;"	f
+queue_work_on	workqueue.c	/^EXPORT_SYMBOL(queue_work_on);$/;"	v
+queue_work_on	workqueue.c	/^bool queue_work_on(int cpu, struct workqueue_struct *wq,$/;"	f
+rcu	workqueue.c	/^	struct rcu_head		rcu;$/;"	m	struct:pool_workqueue	typeref:struct:pool_workqueue::rcu_head	file:
+rcu	workqueue.c	/^	struct rcu_head		rcu;$/;"	m	struct:worker_pool	typeref:struct:worker_pool::rcu_head	file:
+rcu	workqueue.c	/^	struct rcu_head		rcu;$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::rcu_head	file:
+rcu_free_pool	workqueue.c	/^static void rcu_free_pool(struct rcu_head *rcu)$/;"	f	file:
+rcu_free_pwq	workqueue.c	/^static void rcu_free_pwq(struct rcu_head *rcu)$/;"	f	file:
+rcu_free_wq	workqueue.c	/^static void rcu_free_wq(struct rcu_head *rcu)$/;"	f	file:
+rcu_work_rcufn	workqueue.c	/^static void rcu_work_rcufn(struct rcu_head *rcu)$/;"	f	file:
+rebind_workers	workqueue.c	/^static void rebind_workers(struct worker_pool *pool)$/;"	f	file:
+refcnt	workqueue.c	/^	int			refcnt;		\/* L: reference count *\/$/;"	m	struct:pool_workqueue	file:
+refcnt	workqueue.c	/^	int			refcnt;		\/* PL: refcnt for unbound pools *\/$/;"	m	struct:worker_pool	file:
+rescuer	workqueue.c	/^	struct worker		*rescuer;	\/* I: rescue worker *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::worker	file:
+rescuer_thread	workqueue.c	/^static int rescuer_thread(void *__rescuer)$/;"	f	file:
+restore_unbound_workers_cpumask	workqueue.c	/^static void restore_unbound_workers_cpumask(struct worker_pool *pool, int cpu)$/;"	f	file:
+ret	workqueue.c	/^	long ret;$/;"	m	struct:work_for_cpu	file:
+saved_max_active	workqueue.c	/^	int			saved_max_active; \/* WQ: saved pwq max_active *\/$/;"	m	struct:workqueue_struct	file:
+schedule_on_each_cpu	workqueue.c	/^int schedule_on_each_cpu(work_func_t func)$/;"	f
+send_mayday	workqueue.c	/^static void send_mayday(struct work_struct *work)$/;"	f	file:
+set_pf_worker	workqueue.c	/^static void set_pf_worker(bool val)$/;"	f	file:
+set_work_data	workqueue.c	/^static inline void set_work_data(struct work_struct *work, unsigned long data,$/;"	f	file:
+set_work_pool_and_clear_pending	workqueue.c	/^static void set_work_pool_and_clear_pending(struct work_struct *work,$/;"	f	file:
+set_work_pool_and_keep_pending	workqueue.c	/^static void set_work_pool_and_keep_pending(struct work_struct *work,$/;"	f	file:
+set_work_pwq	workqueue.c	/^static void set_work_pwq(struct work_struct *work, struct pool_workqueue *pwq,$/;"	f	file:
+set_worker_desc	workqueue.c	/^EXPORT_SYMBOL_GPL(set_worker_desc);$/;"	v
+set_worker_desc	workqueue.c	/^void set_worker_desc(const char *fmt, ...)$/;"	f
+show_pwq	workqueue.c	/^static void show_pwq(struct pool_workqueue *pwq)$/;"	f	file:
+show_workqueue_state	workqueue.c	/^void show_workqueue_state(void)$/;"	f
+start_flush_work	workqueue.c	/^static bool start_flush_work(struct work_struct *work, struct wq_barrier *barr,$/;"	f	file:
+system_freezable_power_efficient_wq	workqueue.c	/^EXPORT_SYMBOL_GPL(system_freezable_power_efficient_wq);$/;"	v
+system_freezable_wq	workqueue.c	/^EXPORT_SYMBOL_GPL(system_freezable_wq);$/;"	v
+system_highpri_wq	workqueue.c	/^EXPORT_SYMBOL_GPL(system_highpri_wq);$/;"	v
+system_long_wq	workqueue.c	/^EXPORT_SYMBOL_GPL(system_long_wq);$/;"	v
+system_power_efficient_wq	workqueue.c	/^EXPORT_SYMBOL_GPL(system_power_efficient_wq);$/;"	v
+system_unbound_wq	workqueue.c	/^EXPORT_SYMBOL_GPL(system_unbound_wq);$/;"	v
+system_wq	workqueue.c	/^EXPORT_SYMBOL(system_wq);$/;"	v
+task	workqueue.c	/^	struct task_struct	*task;	\/* purely informational *\/$/;"	m	struct:wq_barrier	typeref:struct:wq_barrier::task_struct	file:
+thaw_workqueues	workqueue.c	/^void thaw_workqueues(void)$/;"	f
+too_many_workers	workqueue.c	/^static bool too_many_workers(struct worker_pool *pool)$/;"	f	file:
+try_to_grab_pending	workqueue.c	/^static int try_to_grab_pending(struct work_struct *work, bool is_dwork,$/;"	f	file:
+unbind_workers	workqueue.c	/^static void unbind_workers(int cpu)$/;"	f	file:
+unbound_attrs	workqueue.c	/^	struct workqueue_attrs	*unbound_attrs;	\/* PW: only for unbound wqs *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::workqueue_attrs	file:
+unbound_pwq_by_node	workqueue.c	/^static struct pool_workqueue *unbound_pwq_by_node(struct workqueue_struct *wq,$/;"	f	file:
+unbound_release_work	workqueue.c	/^	struct work_struct	unbound_release_work;$/;"	m	struct:pool_workqueue	typeref:struct:pool_workqueue::work_struct	file:
+unbound_std_wq_attrs	workqueue.c	/^static struct workqueue_attrs *unbound_std_wq_attrs[NR_STD_WORKER_POOLS];$/;"	v	typeref:struct:workqueue_attrs	file:
+wait	workqueue.c	/^	wait_queue_entry_t		wait;$/;"	m	struct:cwt_wait	file:
+wake_up_worker	workqueue.c	/^static void wake_up_worker(struct worker_pool *pool)$/;"	f	file:
+watchdog_ts	workqueue.c	/^	unsigned long		watchdog_ts;	\/* L: watchdog timestamp *\/$/;"	m	struct:worker_pool	file:
+work	workqueue.c	/^	struct work_struct	*work;$/;"	m	struct:cwt_wait	typeref:struct:cwt_wait::work_struct	file:
+work	workqueue.c	/^	struct work_struct	work;$/;"	m	struct:wq_barrier	typeref:struct:wq_barrier::work_struct	file:
+work	workqueue.c	/^	struct work_struct work;$/;"	m	struct:work_for_cpu	typeref:struct:work_for_cpu::work_struct	file:
+work_busy	workqueue.c	/^EXPORT_SYMBOL_GPL(work_busy);$/;"	v
+work_busy	workqueue.c	/^unsigned int work_busy(struct work_struct *work)$/;"	f
+work_color	workqueue.c	/^	int			work_color;	\/* L: current color *\/$/;"	m	struct:pool_workqueue	file:
+work_color	workqueue.c	/^	int			work_color;	\/* WQ: current work color *\/$/;"	m	struct:workqueue_struct	file:
+work_color_to_flags	workqueue.c	/^static unsigned int work_color_to_flags(int color)$/;"	f	file:
+work_debug_descr	workqueue.c	/^static struct debug_obj_descr work_debug_descr = {$/;"	v	typeref:struct:debug_obj_descr	file:
+work_debug_descr	workqueue.c	/^static struct debug_obj_descr work_debug_descr;$/;"	v	typeref:struct:debug_obj_descr	file:
+work_debug_hint	workqueue.c	/^static void *work_debug_hint(void *addr)$/;"	f	file:
+work_fixup_free	workqueue.c	/^static bool work_fixup_free(void *addr, enum debug_obj_state state)$/;"	f	file:
+work_fixup_init	workqueue.c	/^static bool work_fixup_init(void *addr, enum debug_obj_state state)$/;"	f	file:
+work_for_cpu	workqueue.c	/^struct work_for_cpu {$/;"	s	file:
+work_for_cpu_fn	workqueue.c	/^static void work_for_cpu_fn(struct work_struct *work)$/;"	f	file:
+work_is_canceling	workqueue.c	/^static bool work_is_canceling(struct work_struct *work)$/;"	f	file:
+work_is_static_object	workqueue.c	/^static bool work_is_static_object(void *addr)$/;"	f	file:
+work_next_color	workqueue.c	/^static int work_next_color(int color)$/;"	f	file:
+work_on_cpu	workqueue.c	/^EXPORT_SYMBOL_GPL(work_on_cpu);$/;"	v
+work_on_cpu	workqueue.c	/^long work_on_cpu(int cpu, long (*fn)(void *), void *arg)$/;"	f
+work_on_cpu_safe	workqueue.c	/^EXPORT_SYMBOL_GPL(work_on_cpu_safe);$/;"	v
+work_on_cpu_safe	workqueue.c	/^long work_on_cpu_safe(int cpu, long (*fn)(void *), void *arg)$/;"	f
+worker_attach_to_pool	workqueue.c	/^static void worker_attach_to_pool(struct worker *worker,$/;"	f	file:
+worker_clr_flags	workqueue.c	/^static inline void worker_clr_flags(struct worker *worker, unsigned int flags)$/;"	f	file:
+worker_detach_from_pool	workqueue.c	/^static void worker_detach_from_pool(struct worker *worker)$/;"	f	file:
+worker_enter_idle	workqueue.c	/^static void worker_enter_idle(struct worker *worker)$/;"	f	file:
+worker_ida	workqueue.c	/^	struct ida		worker_ida;	\/* worker IDs for task name *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::ida	file:
+worker_leave_idle	workqueue.c	/^static void worker_leave_idle(struct worker *worker)$/;"	f	file:
+worker_pool	workqueue.c	/^struct worker_pool {$/;"	s	file:
+worker_pool_assign_id	workqueue.c	/^static int worker_pool_assign_id(struct worker_pool *pool)$/;"	f	file:
+worker_set_flags	workqueue.c	/^static inline void worker_set_flags(struct worker *worker, unsigned int flags)$/;"	f	file:
+worker_thread	workqueue.c	/^static int worker_thread(void *__worker)$/;"	f	file:
+workers	workqueue.c	/^	struct list_head	workers;	\/* A: attached workers *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::list_head	file:
+worklist	workqueue.c	/^	struct list_head	worklist;	\/* L: list of pending works *\/$/;"	m	struct:worker_pool	typeref:struct:worker_pool::list_head	file:
+workqueue_apply_unbound_cpumask	workqueue.c	/^static int workqueue_apply_unbound_cpumask(void)$/;"	f	file:
+workqueue_congested	workqueue.c	/^EXPORT_SYMBOL_GPL(workqueue_congested);$/;"	v
+workqueue_congested	workqueue.c	/^bool workqueue_congested(int cpu, struct workqueue_struct *wq)$/;"	f
+workqueue_freezing	workqueue.c	/^static bool workqueue_freezing;		\/* PL: have wqs started freezing? *\/$/;"	v	file:
+workqueue_init	workqueue.c	/^int __init workqueue_init(void)$/;"	f
+workqueue_init_early	workqueue.c	/^int __init workqueue_init_early(void)$/;"	f
+workqueue_offline_cpu	workqueue.c	/^int workqueue_offline_cpu(unsigned int cpu)$/;"	f
+workqueue_online_cpu	workqueue.c	/^int workqueue_online_cpu(unsigned int cpu)$/;"	f
+workqueue_prepare_cpu	workqueue.c	/^int workqueue_prepare_cpu(unsigned int cpu)$/;"	f
+workqueue_select_cpu_near	workqueue.c	/^static int workqueue_select_cpu_near(int node)$/;"	f	file:
+workqueue_set_max_active	workqueue.c	/^EXPORT_SYMBOL_GPL(workqueue_set_max_active);$/;"	v
+workqueue_set_max_active	workqueue.c	/^void workqueue_set_max_active(struct workqueue_struct *wq, int max_active)$/;"	f
+workqueue_set_unbound_cpumask	workqueue.c	/^int workqueue_set_unbound_cpumask(cpumask_var_t cpumask)$/;"	f
+workqueue_struct	workqueue.c	/^struct workqueue_struct {$/;"	s	file:
+workqueue_sysfs_register	workqueue.c	/^int workqueue_sysfs_register(struct workqueue_struct *wq)$/;"	f
+workqueue_sysfs_unregister	workqueue.c	/^static void workqueue_sysfs_unregister(struct workqueue_struct *wq)	{ }$/;"	f	file:
+workqueue_sysfs_unregister	workqueue.c	/^static void workqueue_sysfs_unregister(struct workqueue_struct *wq)$/;"	f	file:
+wq	workqueue.c	/^	struct workqueue_struct		*wq;$/;"	m	struct:wq_device	typeref:struct:wq_device::workqueue_struct	file:
+wq	workqueue.c	/^	struct workqueue_struct	*wq;		\/* target workqueue *\/$/;"	m	struct:apply_wqattrs_ctx	typeref:struct:apply_wqattrs_ctx::workqueue_struct	file:
+wq	workqueue.c	/^	struct workqueue_struct *wq;		\/* I: the owning workqueue *\/$/;"	m	struct:pool_workqueue	typeref:struct:pool_workqueue::workqueue_struct	file:
+wq_barrier	workqueue.c	/^struct wq_barrier {$/;"	s	file:
+wq_barrier_func	workqueue.c	/^static void wq_barrier_func(struct work_struct *work)$/;"	f	file:
+wq_calc_node_cpumask	workqueue.c	/^static bool wq_calc_node_cpumask(const struct workqueue_attrs *attrs, int node,$/;"	f	file:
+wq_clamp_max_active	workqueue.c	/^static int wq_clamp_max_active(int max_active, unsigned int flags,$/;"	f	file:
+wq_cpumask_show	workqueue.c	/^static ssize_t wq_cpumask_show(struct device *dev,$/;"	f	file:
+wq_cpumask_store	workqueue.c	/^static ssize_t wq_cpumask_store(struct device *dev,$/;"	f	file:
+wq_debug_force_rr_cpu	workqueue.c	/^static bool wq_debug_force_rr_cpu = false;$/;"	v	file:
+wq_debug_force_rr_cpu	workqueue.c	/^static bool wq_debug_force_rr_cpu = true;$/;"	v	file:
+wq_dev	workqueue.c	/^	struct wq_device	*wq_dev;	\/* I: for sysfs interface *\/$/;"	m	struct:workqueue_struct	typeref:struct:workqueue_struct::wq_device	file:
+wq_device	workqueue.c	/^struct wq_device {$/;"	s	file:
+wq_device_release	workqueue.c	/^static void wq_device_release(struct device *dev)$/;"	f	file:
+wq_disable_numa	workqueue.c	/^static bool wq_disable_numa;$/;"	v	file:
+wq_flusher	workqueue.c	/^struct wq_flusher {$/;"	s	file:
+wq_free_lockdep	workqueue.c	/^static void wq_free_lockdep(struct workqueue_struct *wq)$/;"	f	file:
+wq_init_lockdep	workqueue.c	/^static void wq_init_lockdep(struct workqueue_struct *wq)$/;"	f	file:
+wq_nice_show	workqueue.c	/^static ssize_t wq_nice_show(struct device *dev, struct device_attribute *attr,$/;"	f	file:
+wq_nice_store	workqueue.c	/^static ssize_t wq_nice_store(struct device *dev, struct device_attribute *attr,$/;"	f	file:
+wq_numa_enabled	workqueue.c	/^static bool wq_numa_enabled;		\/* unbound NUMA affinity enabled *\/$/;"	v	file:
+wq_numa_init	workqueue.c	/^static void __init wq_numa_init(void)$/;"	f	file:
+wq_numa_possible_cpumask	workqueue.c	/^static cpumask_var_t *wq_numa_possible_cpumask;$/;"	v	file:
+wq_numa_show	workqueue.c	/^static ssize_t wq_numa_show(struct device *dev, struct device_attribute *attr,$/;"	f	file:
+wq_numa_store	workqueue.c	/^static ssize_t wq_numa_store(struct device *dev, struct device_attribute *attr,$/;"	f	file:
+wq_online	workqueue.c	/^static bool wq_online;			\/* can kworkers be created yet? *\/$/;"	v	file:
+wq_pool_ids_show	workqueue.c	/^static ssize_t wq_pool_ids_show(struct device *dev,$/;"	f	file:
+wq_power_efficient	workqueue.c	/^static bool wq_power_efficient = IS_ENABLED(CONFIG_WQ_POWER_EFFICIENT_DEFAULT);$/;"	v	file:
+wq_select_unbound_cpu	workqueue.c	/^static int wq_select_unbound_cpu(int cpu)$/;"	f	file:
+wq_subsys	workqueue.c	/^static struct bus_type wq_subsys = {$/;"	v	typeref:struct:bus_type	file:
+wq_sysfs	workqueue.c	/^ATTRIBUTE_GROUPS(wq_sysfs);$/;"	v
+wq_sysfs_attrs	workqueue.c	/^static struct attribute *wq_sysfs_attrs[] = {$/;"	v	typeref:struct:attribute	file:
+wq_sysfs_cpumask_attr	workqueue.c	/^static struct device_attribute wq_sysfs_cpumask_attr =$/;"	v	typeref:struct:device_attribute	file:
+wq_sysfs_init	workqueue.c	/^core_initcall(wq_sysfs_init);$/;"	v
+wq_sysfs_init	workqueue.c	/^static int __init wq_sysfs_init(void)$/;"	f	file:
+wq_sysfs_prep_attrs	workqueue.c	/^static struct workqueue_attrs *wq_sysfs_prep_attrs(struct workqueue_struct *wq)$/;"	f	file:
+wq_sysfs_unbound_attrs	workqueue.c	/^static struct device_attribute wq_sysfs_unbound_attrs[] = {$/;"	v	typeref:struct:device_attribute	file:
+wq_unbound_cpumask	workqueue.c	/^static cpumask_var_t wq_unbound_cpumask;$/;"	v	file:
+wq_unbound_cpumask_show	workqueue.c	/^static ssize_t wq_unbound_cpumask_show(struct device *dev,$/;"	f	file:
+wq_unbound_cpumask_store	workqueue.c	/^static ssize_t wq_unbound_cpumask_store(struct device *dev,$/;"	f	file:
+wq_unregister_lockdep	workqueue.c	/^static void wq_unregister_lockdep(struct workqueue_struct *wq)$/;"	f	file:
+wq_update_unbound_numa	workqueue.c	/^static void wq_update_unbound_numa(struct workqueue_struct *wq, int cpu,$/;"	f	file:
+wq_update_unbound_numa_attrs_buf	workqueue.c	/^static struct workqueue_attrs *wq_update_unbound_numa_attrs_buf;$/;"	v	typeref:struct:workqueue_attrs	file:
+wq_watchdog_init	workqueue.c	/^static inline void wq_watchdog_init(void) { }$/;"	f	file:
+wq_watchdog_init	workqueue.c	/^static void wq_watchdog_init(void)$/;"	f	file:
+wq_watchdog_param_set_thresh	workqueue.c	/^static int wq_watchdog_param_set_thresh(const char *val,$/;"	f	file:
+wq_watchdog_reset_touched	workqueue.c	/^static void wq_watchdog_reset_touched(void)$/;"	f	file:
+wq_watchdog_set_thresh	workqueue.c	/^static void wq_watchdog_set_thresh(unsigned long thresh)$/;"	f	file:
+wq_watchdog_thresh	workqueue.c	/^static unsigned long wq_watchdog_thresh = 30;$/;"	v	file:
+wq_watchdog_thresh_ops	workqueue.c	/^static const struct kernel_param_ops wq_watchdog_thresh_ops = {$/;"	v	typeref:struct:kernel_param_ops	file:
+wq_watchdog_timer	workqueue.c	/^static struct timer_list wq_watchdog_timer;$/;"	v	typeref:struct:timer_list	file:
+wq_watchdog_timer_fn	workqueue.c	/^static void wq_watchdog_timer_fn(struct timer_list *unused)$/;"	f	file:
+wq_watchdog_touch	workqueue.c	/^notrace void wq_watchdog_touch(int cpu)$/;"	f
+wq_watchdog_touched	workqueue.c	/^static unsigned long wq_watchdog_touched = INITIAL_JIFFIES;$/;"	v	file:
+wq_worker_comm	workqueue.c	/^void wq_worker_comm(char *buf, size_t size, struct task_struct *task)$/;"	f
+wq_worker_last_func	workqueue.c	/^work_func_t wq_worker_last_func(struct task_struct *task)$/;"	f
+wq_worker_running	workqueue.c	/^void wq_worker_running(struct task_struct *task)$/;"	f
+wq_worker_sleeping	workqueue.c	/^void wq_worker_sleeping(struct task_struct *task)$/;"	f
+wqattrs_equal	workqueue.c	/^static bool wqattrs_equal(const struct workqueue_attrs *a,$/;"	f	file:
+wqattrs_hash	workqueue.c	/^static u32 wqattrs_hash(const struct workqueue_attrs *attrs)$/;"	f	file:
