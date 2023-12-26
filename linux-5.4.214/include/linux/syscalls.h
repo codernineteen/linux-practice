@@ -1221,7 +1221,7 @@ asmlinkage long sys_old_mmap(struct mmap_arg_struct __user *arg);
  * not implemented -- see kernel/sys_ni.c
  */
 asmlinkage long sys_ni_syscall(void);
-
+asmlinkage long sys_yechan_call(void);
 #endif /* CONFIG_ARCH_HAS_SYSCALL_WRAPPER */
 
 
@@ -1421,4 +1421,5 @@ long compat_ksys_semtimedop(int semid, struct sembuf __user *tsems,
 			    unsigned int nsops,
 			    const struct old_timespec32 __user *timeout);
 
+asmlinkage long sys_yechan(void);
 #endif

@@ -1,0 +1,727 @@
+cscope 15 $HOME/source               0000003939
+	@calclock.c
+
+	@calclock.h
+
+	@yechan_module.c
+
+1 
+	~<löux/kî√l.h
+>
+
+2 
+	~<löux/moduÀ.h
+>
+
+3 
+	~<löux/öô.h
+>
+
+5 
+__öô
+ 
+	$yech™_moduÀ_öô
+()
+
+7 
+	`¥ötk
+("Hello Yechan 20194902!\n");
+
+9 
+	}
+}
+
+11 
+__exô
+ 
+	$yech™_moduÀ_˛ónup
+()
+
+13 
+	`¥ötk
+("Bye yechan!\n");
+
+14 
+	}
+}
+
+16 
+moduÀ_öô
+(
+yech™_moduÀ_öô
+);
+
+17 
+moduÀ_exô
+(
+yech™_moduÀ_˛ónup
+);
+
+18 
+MODULE_LICENSE
+("GPL");
+
+	@yechan_module.mod.c
+
+1 
+	~<löux/buûd-ß….h
+>
+
+2 
+	~<löux/moduÀ.h
+>
+
+3 
+	~<löux/vîmagic.h
+>
+
+4 
+	~<löux/compûî.h
+>
+
+6 
+	gBUILD_SALT
+;
+
+8 
+MODULE_INFO
+(
+vîmagic
+, 
+VERMAGIC_STRING
+);
+
+9 
+MODULE_INFO
+(
+«me
+, 
+KBUILD_MODNAME
+);
+
+11 
+__visibÀ
+ 
+moduÀ
+ 
+__this_moduÀ
+
+
+12 
+__£˘i⁄
+(.
+gnu
+.
+lök⁄˚
+.
+this_moduÀ
+) = {
+
+13 .
+«me
+ = 
+KBUILD_MODNAME
+,
+
+14 .
+	göô
+ = 
+öô_moduÀ
+,
+
+15 #ifde‡
+CONFIG_MODULE_UNLOAD
+
+
+16 .
+	gexô
+ = 
+˛ónup_moduÀ
+,
+
+18 .
+	g¨ch
+ = 
+MODULE_ARCH_INIT
+,
+
+21 #ifde‡
+CONFIG_RETPOLINE
+
+
+22 
+MODULE_INFO
+(
+ªçﬁöe
+, "Y");
+
+25 c⁄° 
+modvîsi⁄_öfo
+ 
+	g____vîsi⁄s
+[]
+
+26 
+__u£d
+ 
+__£˘i⁄
+(
+__vîsi⁄s
+) = {
+
+32 
+MODULE_INFO
+(
+dïíds
+, "");
+
+35 
+MODULE_INFO
+(
+§cvîsi⁄
+, "B895EB66209B434B69AEAB1");
+
+	@/usr/include/linux/kernel.h
+
+2 #i‚de‡
+_LINUX_KERNEL_H
+
+
+3 
+	#_LINUX_KERNEL_H
+
+
+	)
+
+5 
+	~<löux/sysöfo.h
+>
+
+6 
+	~<löux/c⁄°.h
+>
+
+	@/usr/include/linux/module.h
+
+2 #i‚de‡
+_LINUX_MODULE_H
+
+
+3 
+	#_LINUX_MODULE_H
+
+
+	)
+
+6 
+	#MODULE_INIT_IGNORE_MODVERSIONS
+ 1
+
+	)
+
+7 
+	#MODULE_INIT_IGNORE_VERMAGIC
+ 2
+
+	)
+
+	@/usr/include/linux/const.h
+
+4 #i‚de‡
+_LINUX_CONST_H
+
+
+5 
+	#_LINUX_CONST_H
+
+
+	)
+
+16 #ifde‡
+__ASSEMBLY__
+
+
+17 
+	#_AC
+(
+X
+,
+Y
+Ë
+	)
+X
+
+18 
+	#_AT
+(
+T
+,
+X
+Ë
+	)
+X
+
+20 
+	#__AC
+(
+X
+,
+Y
+Ë(X##Y)
+
+	)
+
+21 
+	#_AC
+(
+X
+,
+Y
+Ë
+	`__AC
+(X,Y)
+
+	)
+
+22 
+	#_AT
+(
+T
+,
+X
+Ë((T)(X))
+
+	)
+
+25 
+	#_UL
+(
+x
+Ë(
+	`_AC
+(x, 
+UL
+))
+
+	)
+
+26 
+	#_ULL
+(
+x
+Ë(
+	`_AC
+(x, 
+ULL
+))
+
+	)
+
+28 
+	#_BITUL
+(
+x
+Ë(
+	`_UL
+(1Ë<< (x))
+
+	)
+
+29 
+	#_BITULL
+(
+x
+Ë(
+	`_ULL
+(1Ë<< (x))
+
+	)
+
+31 
+	#__ALIGN_KERNEL
+(
+x
+, 
+a
+Ë
+	`__ALIGN_KERNEL_MASK
+(x, (
+	`__ty≥of__
+(x))◊Ë- 1)
+
+	)
+
+32 
+	#__ALIGN_KERNEL_MASK
+(
+x
+, 
+mask
+Ë(((xË+ (mask)Ë& ~(mask))
+
+	)
+
+34 
+	#__KERNEL_DIV_ROUND_UP
+(
+n
+, 
+d
+Ë((“Ë+ (dË- 1Ë/ (d))
+
+	)
+
+	@/usr/include/linux/sysinfo.h
+
+2 #i‚de‡
+_LINUX_SYSINFO_H
+
+
+3 
+	#_LINUX_SYSINFO_H
+
+
+	)
+
+5 
+	~<löux/ty≥s.h
+>
+
+7 
+	#SI_LOAD_SHIFT
+ 16
+
+	)
+
+8 
+	ssysöfo
+ {
+
+9 
+__kî√l_l⁄g_t
+ 
+	mu±ime
+;
+
+10 
+__kî√l_ul⁄g_t
+ 
+	mlﬂds
+[3];
+
+11 
+__kî√l_ul⁄g_t
+ 
+	mtŸÆøm
+;
+
+12 
+__kî√l_ul⁄g_t
+ 
+	m‰ìøm
+;
+
+13 
+__kî√l_ul⁄g_t
+ 
+	msh¨edøm
+;
+
+14 
+__kî√l_ul⁄g_t
+ 
+	mbuf„ºam
+;
+
+15 
+__kî√l_ul⁄g_t
+ 
+	mtŸÆsw≠
+;
+
+16 
+__kî√l_ul⁄g_t
+ 
+	m‰ìsw≠
+;
+
+17 
+__u16
+ 
+	m¥ocs
+;
+
+18 
+__u16
+ 
+	m∑d
+;
+
+19 
+__kî√l_ul⁄g_t
+ 
+	mtŸÆhigh
+;
+
+20 
+__kî√l_ul⁄g_t
+ 
+	m‰ìhigh
+;
+
+21 
+__u32
+ 
+	mmem_unô
+;
+
+22 
+	m_f
+[20-2*(
+__kî√l_ul⁄g_t
+)-(
+__u32
+)];
+
+	@/usr/include/linux/types.h
+
+2 #i‚de‡
+_LINUX_TYPES_H
+
+
+3 
+	#_LINUX_TYPES_H
+
+
+	)
+
+5 
+	~<asm/ty≥s.h
+>
+
+7 #i‚de‡
+__ASSEMBLY__
+
+
+9 
+	~<löux/posix_ty≥s.h
+>
+
+17 #ifde‡
+__CHECKER__
+
+
+18 
+	#__bôwi£__
+ 
+	`__©åibuã__
+((
+bôwi£
+))
+
+	)
+
+20 
+	#__bôwi£__
+
+
+	)
+
+22 
+	#__bôwi£
+ 
+__bôwi£__
+
+
+	)
+
+24 
+__u16
+ 
+	t__bôwi£
+ 
+	t__À16
+;
+
+25 
+__u16
+ 
+	t__bôwi£
+ 
+	t__be16
+;
+
+26 
+__u32
+ 
+	t__bôwi£
+ 
+	t__À32
+;
+
+27 
+__u32
+ 
+	t__bôwi£
+ 
+	t__be32
+;
+
+28 
+__u64
+ 
+	t__bôwi£
+ 
+	t__À64
+;
+
+29 
+__u64
+ 
+	t__bôwi£
+ 
+	t__be64
+;
+
+31 
+__u16
+ 
+	t__bôwi£
+ 
+	t__sum16
+;
+
+32 
+__u32
+ 
+	t__bôwi£
+ 
+	t__wsum
+;
+
+43 
+	#__Æig√d_u64
+ 
+__u64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+44 
+	#__Æig√d_be64
+ 
+__be64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+45 
+	#__Æig√d_À64
+ 
+__À64
+ 
+	`__©åibuã__
+((
+	`Æig√d
+(8)))
+
+	)
+
+47 
+	t__bôwi£
+ 
+	t__pﬁl_t
+;
+
+	@/usr/include/linux/posix_types.h
+
+2 #i‚de‡
+_LINUX_POSIX_TYPES_H
+
+
+3 
+	#_LINUX_POSIX_TYPES_H
+
+
+	)
+
+5 
+	~<löux/°ddef.h
+>
+
+22 #unde‡
+__FD_SETSIZE
+
+
+23 
+	#__FD_SETSIZE
+ 1024
+
+	)
+
+26 
+	mfds_bôs
+[
+__FD_SETSIZE
+ / (8 * ())];
+
+27 } 
+	t__kî√l_fd_£t
+;
+
+30 (*
+	t__kî√l_sigh™dÀr_t
+)();
+
+33 
+	t__kî√l_key_t
+;
+
+34 
+	t__kî√l_mqd_t
+;
+
+36 
+	~<asm/posix_ty≥s.h
+>
+
+	@/usr/include/linux/stddef.h
+
+4 #i‚de‡
+__Æways_ölöe
+
+
+5 
+	#__Æways_ölöe
+ 
+__ölöe__
+
+
+	)
+
+	@
+1
+.
+1
+/usr/include
+11
+258
+calclock.c
+calclock.h
+yechan_module.c
+yechan_module.mod.c
+/usr/include/linux/kernel.h
+/usr/include/linux/module.h
+/usr/include/linux/const.h
+/usr/include/linux/sysinfo.h
+/usr/include/linux/types.h
+/usr/include/linux/posix_types.h
+/usr/include/linux/stddef.h

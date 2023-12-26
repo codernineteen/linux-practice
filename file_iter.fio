@@ -1,0 +1,15 @@
+; -- start job file --
+[global]
+name=file_iter
+directory=/mnt/yechan
+rw=write
+bs=4K
+direct=0
+numjobs=4
+;verify=meta
+
+
+[fio-test]
+size=12G
+group_reporting
+; -- end job file --
